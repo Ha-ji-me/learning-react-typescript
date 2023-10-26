@@ -7,8 +7,17 @@ import { Practice3 } from './practices/Practice3';
 import { Practice4 } from './practices/Practice4';
 import { MainTodo } from './practices/MainTodo';
 import { Text } from './practices/Text';
+import { UserProfile } from './practices/UserProfile';
+import { User } from './types/user';
 
 function App() {
+  const user: User = {
+    name: "ばろほ",
+    hobbies: [
+      "競馬",
+      "プログラミング",
+    ],
+  }
   return (
     <div className="App">
       {/* <Practice1 />
@@ -16,7 +25,8 @@ function App() {
       <Practice3 />
       <Practice4 />
       <MainTodo /> */}
-      <Text color="red" fontSize="18px" />
+      {/* <Text color="red" fontSize="18px" /> */}
+      <UserProfile user={user} />
     </div>
   );
 }
