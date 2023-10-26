@@ -5,6 +5,7 @@ import { Practice1 } from './practices/Practice1';
 import { Practice2 } from './practices/Practice2';
 import { Practice3 } from './practices/Practice3';
 import { Practice4 } from './practices/Practice4';
+import { MainTodo } from './practices/MainTodo';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Practice2 />
       <Practice3 />
       <Practice4 />
+      <MainTodo />
     </div>
   );
 }
