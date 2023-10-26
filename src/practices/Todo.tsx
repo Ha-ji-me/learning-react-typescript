@@ -1,14 +1,8 @@
-import axios from "axios";
+import { TodoType } from "../types/todo";
 
-type TodoType = {
-  userId: number;
-  title: string;
-  //オプションprops。あってもなくても良い場合に必要。
-  completed?: boolean;
-}
-
-export const Todo = (props: TodoType) => {
-  //オプションpropsにはundefinedを返さないよう初期値を設定することが慣習。
+export const Todo = (
+  props: Pick<TodoType, "userId" | "title" | "completed">
+) => {
   const { title, userId,completed = false } = props;
   const completedFlag = completed ? "[完]" : "[未]";
 
