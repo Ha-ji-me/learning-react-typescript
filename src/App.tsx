@@ -9,6 +9,7 @@ import { MainTodo } from './practices/MainTodo';
 import { Text } from './practices/Text';
 import { UserProfile } from './practices/UserProfile';
 import { User } from './types/user';
+import { Test } from './practices/Test';
 
 function App() {
   const user: User = {
@@ -27,6 +28,7 @@ function App() {
       <MainTodo /> */}
       {/* <Text color="red" fontSize="18px" /> */}
       <UserProfile user={user} />
+      <Test />
     </div>
   );
 }
