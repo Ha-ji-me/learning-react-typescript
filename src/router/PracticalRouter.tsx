@@ -4,6 +4,7 @@ import { Home } from "../practicalComponents/pages/Home";
 import { Login } from "../practicalComponents/pages/Login";
 import { Setting } from "../practicalComponents/pages/Setting";
 import { UserManagement } from "../practicalComponents/pages/UserManagement";
+import { Page404 } from "../practicalComponents/pages/Page404";
 
 export const PracticalRouter: FC = memo(() => {
   return (
@@ -15,6 +16,7 @@ export const PracticalRouter: FC = memo(() => {
         <Route path="setting" element={ <Setting /> } />
         <Route path="user-management" element={ <UserManagement /> } />
       </Route>
+      <Route path="*" element={ <Page404 /> } />
     </Routes>
   )
 })
