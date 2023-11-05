@@ -12,6 +12,11 @@ export const Es = () => {
   const [test, num] = myArr;
   console.log(test, num);
 
+  //デフォルト値
+  //引数等の初期値設定
+  const sayHello = (name="ゲスト") => console.log(`こんにちは${name}さん！`);
+  sayHello();
+
   return (
     <div>{name}</div>
 
