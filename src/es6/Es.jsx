@@ -17,6 +17,13 @@ export const Es = () => {
   const sayHello = (name="ゲスト") => console.log(`こんにちは${name}さん！`);
   sayHello();
 
+  //スプレッド構文
+  const arr = [1,1,1,1,1,1,1,1,1,1,1];
+  const arr2 = [2,2,2,2,2,2,2,2,2,2,2];
+  const arr3 = [...arr, ...arr2];
+  const arr4 = [...arr, 5,32];
+  console.log(arr,arr2,arr3,arr4);
+
   return (
     <div>{name}</div>
 
