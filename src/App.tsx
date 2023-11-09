@@ -10,7 +10,6 @@ import { UserProfile } from './practices/UserProfile';
 import { User } from './types/user';
 import { Test } from './practices/Test';
 import { MainPractical } from './practicalComponents/MainPractical';
-import { Todo } from './todos/Todo';
 import { Es } from './es6/Es';
 import { Search } from './search/Search';
 import { ImageSearch } from './search/ImageSearch';
